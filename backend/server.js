@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
     ? [process.env.FRONTEND_URL] 
-    : ['http://localhost:3000', 'http://localhost:5175'], // Common dev ports
+    : ['http://localhost:3000', 'http://localhost:5175','http://localhost:5173'], // Common dev ports
   credentials: true, // If you need to send cookies
   optionsSuccessStatus: 200,
   methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE']
